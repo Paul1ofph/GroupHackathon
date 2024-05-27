@@ -181,6 +181,43 @@ header{
     padding-top: 5rem;
  }
 
+ h1 span:nth-of-type(1){
+    --animation-delay: 10ms;
+}
+
+h1 span:nth-of-type(2){
+    --animation-delay: 200ms;
+}
+
+h1 span:nth-of-type(3){
+    --animation-delay: 400ms;
+}
+
+h1 span:nth-of-type(4){
+    --animation-delay: 600ms;
+}
+
+h1 span{
+    filter: blur(0px);
+    opacity: 0;
+    position: relative;
+    animation: blur 500ms forwards;
+    animation-delay: var(--animation-delay);
+}
+
+@keyframes blur {
+    0%{
+        filter: blur(40px);
+        opacity: 0;
+        bottom: -40px;
+    }
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
  .leftrow1{
     width: 100%;
     max-width: 100%;
@@ -239,11 +276,44 @@ header{
     opacity: 0.8;
 }
 .heroinetext button {
+    animation-delay: 700ms;
     padding: 10px;
     border-radius: 6px;
     border: none;
     font-size: 17px;
     margin: 2px;
+}
+
+.fade-up{
+    animation: fade-up 4s forwards ease-out;
+    animation-delay: var(--animation-delay);
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        bottom: -60px;
+    }
+
+    60%{
+        opacity: .7;
+        bottom: 4px;
+    }
+
+    100%{
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+.box{
+transform: translateY(50%);
+transition: transform 1s  ease-in-out;
+}
+.box:nth-of-type(even) {
+transform: translateX(-400%);
+}
+.box.show{
+transform: translate(0);
 }
 
 .heroinetext button:hover{
