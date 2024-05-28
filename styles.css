@@ -129,6 +129,7 @@ header{
 .sidebar ion-icon{
     color: white;
     font-size: 30px; 
+    margin-top: 1rem;
 }
 .second{
     display: flex;
