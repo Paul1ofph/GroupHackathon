@@ -8,6 +8,10 @@ header{
     background-color: #3b5d4f;
 }
 
+button{
+    width: 100%;
+}
+
 .navSection{
     display: flex;
     width: 100%;
@@ -277,6 +281,7 @@ h1 span{
     opacity: 0.8;
 }
 .heroinetext button {
+    width: 100%;
     animation-delay: 700ms;
     padding: 10px;
     border-radius: 6px;
