@@ -510,7 +510,7 @@ background-color: #3b5d4f;
     bottom: -6px;
     background-color: black;
     height: 2px;
-    width: 40px;
+    width: 20%;
 }
 
 .aside3 ul li:not(:last-child){
