@@ -312,7 +312,7 @@ h1 span{
     }
 }
 .box{
-transform: translateY(80%);
+transform: translateY(79%);
 transition: transform 3s  ease;
 }
 .box:nth-of-type(even) {
